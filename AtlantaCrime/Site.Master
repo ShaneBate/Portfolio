@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AtlantaCrime.Pages.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+        <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/lux/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" runat="server" href="~/Pages/Landing.aspx"><img runat="server" src="~/Images/acs_logo.png"/></a>
+                <a class="navbar-brand" runat="server" href="~/Pages/Landing.aspx">Atlanta Crime <br />Statistics</a>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Pages/Landing.aspx">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Pages/CrimeRate.aspx">Crime Rates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Pages/Statistics.aspx">Statistics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Pages/Map.aspx">Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--Footer-->
+      <footer class="page-footer font-small text-white bg-dark pt-4 mt-4">
+      
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+      
+              <!-- Footer links -->
+              <div class="row text-center text-md-left mt-3 pb-3">
+      
+                  <!--First column-->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold text-white">Atlanta Crime Statistics</h6>
+                  </div>
+                  <!--/.First column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Second column-->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold text-white">Site</h6>
+                      <p><a runat="server" href="~/Pages/Landing.aspx" class="text-white">Home</a></p>
+                      <p><a runat="server" href="~/Pages/CrimeRate.aspx" class="text-white">Crime Rates</a></p>
+                      <p><a runat="server" href="~/Pages/Statistics.aspx" class="text-white">Statistics</a></p>
+                      <p><a runat="server" href="~/Pages/Map.aspx" class="text-white">Map</a></p>
+                  </div>
+                  <!--/.Second column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Third column-->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold text-white">Useful links</h6>
+                      <p><a href="#!" class="text-white">USA Crime Statistics</a></p>
+                      <p><a href="#!" class="text-white">Become an Affiliate</a></p>
+                      <p><a href="#!" class="text-white">Help</a></p>
+                  </div>
+                  <!--/.Third column-->
+      
+                  <hr class="w-100 clearfix d-md-none">
+      
+                  <!--Fourth column-->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold text-white">Contact</h6>
+                      <p><i class="fa fa-home mr-3"></i>Atlanta Uni</p>
+                      <p><i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+                      <p><i class="fa fa-phone mr-3"></i> + 01 234 555 88</p>
+                      <p><i class="fa fa-print mr-3"></i> + 01 234 555 89</p>
+                  </div>
+                  <!--/.Fourth column-->
+      
+              </div>
+              <!-- Footer links -->
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+      
+                  <!--Grid column-->
+                  <div class="col-md-8 col-lg-8">
+      
+                      <!--Copyright-->
+                      <p class="text-center text-md-left grey-text">© 2018 Copyright</p>
+                      <!--/.Copyright-->
+      
+                  </div>
+                  <!--Grid column-->
+      
+      
+              </div>
+      
+          </div>
+      
+      </footer>
+      <!--/.Footer-->
+    </form>
+</body>
+</html>
